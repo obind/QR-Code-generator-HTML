@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Sourcecode",
+			"path": "../Sourcecode"
+		},
+		{
+			"name": "Werkzeuge",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
