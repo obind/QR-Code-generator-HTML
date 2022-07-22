@@ -1,4 +1,4 @@
-# QR-COde-generator-HTML
+# QR-Code-generator-HTML
 
 This is a Qr Code Generator. 
 It can simulate Qr codes for different types of connections between our garage door opener app and our garage door openers to test the behavior of the app.
