@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>QR-Code Generator</title>
     <link rel="stylesheet" href="styles/stylesheet.css">
-    <img id="hoermann_img" src="hoermann.png">
-    
 </head>
 
 <body>
@@ -17,36 +15,35 @@
     
         <div class="left-item">
             <h3>Zustände:</h3>
-            
             <select size="1" name= "Bauart" id= "connecting">
-                <option value="bestCase">Best Case</option>
-                <option value="neverConnecting">Never Connecting </option>
-                <option value="rarelyConnecting">Rarely Connecting</option>
-                <option value="teachedBestCase">Teached BestCase</option>
-                <option value="failsLearningTrip">Fails Learning Trip</option>
-                <option value="disconnecting">Disconnecting</option>
-                <option value="teachedDisconnecting">Teached Disconnecting</option>
-                <option value="failsRetrievingErrorsOnce">Fails Retrieving Errors Once</option>
-                <option value="futureRelease">Future Release</option>
+                <option value="bestCase">Case 1</option>
+                <option value="neverConnecting">Case 2</option>
+                <option value="rarelyConnecting">Case 3</option>
+                <option value="teachedBestCase">Case 4</option>
+                <option value="failsLearningTrip">Case 5</option>
+                <option value="disconnecting">Case 6</option>
+                <option value="teachedDisconnecting">Case 8</option>
+                <option value="failsRetrievingErrorsOnce">Case 9</option>
+                <option value="futureRelease">Case 10</option>
             </select>
 
             <h3>Produkte:</h3> 
             <select name="Bauart" id="qr-data">
-                <option value="supramatic">SupraMatic</option>
-                <option value="supramatic4v2">SupraMatic4V2</option>
-                <option value="rollmatic2">Rollmatic2</option>
-                <option value="het">HETS24BLE</option>
-                <option value="wa500fu">WA500FU</option>
+                <option value="product1">Produkt 1</option>
+                <option value="product2">Produkt 2</option>
+                <option value="product3">Produkt 3</option>
+                <option value="product4">Produkt 4</option>
+                <option value="product5">Produkt 5</option>
             </select>         
         </div>
                           
         <div id="favoriten">
             <h3>Favoriten</h3> 
             <table>
-                <tr><td><button class="button ripple" onclick="bestCaseSupramatic()">Best Case SupraMatic</button><br></td></tr>
-                <tr><td><button class="button ripple" onclick="bestCaseSupramatic4V2()">Best Case SupraMatic4V2</button><br></td></tr>
-                <tr><td><button class="button ripple" onclick="bestCaseRollmatic2()">Best Case Rollmatic 2</button><br></td></tr>
-                <tr><td><button class="button ripple" onclick="bestCaseHet()">HET</button><br></td></tr>
+                <tr><td><button class="button ripple" onclick="bestCaseSupramatic()">Case 1 & prdokut 1</button><br></td></tr>
+                <tr><td><button class="button ripple" onclick="bestCaseSupramatic4V2()">case 1 & produkt 2</button><br></td></tr>
+                <tr><td><button class="button ripple" onclick="bestCaseRollmatic2()">case 1 & produkt 3</button><br></td></tr>
+                <tr><td><button class="button ripple" onclick="bestCaseHet()">case 1 & produkt 4</button><br></td></tr>
             </table>
         </div>
         <div class="left-item"><button id="generator" class="button ripple" onclick="myFunction()">Berechnen</button></div> 
@@ -63,7 +60,7 @@
 <br>
 <br>
 <footer>
-    <p>Author: Hörmannn KG Antriebstechnik</p>
+    <p>Author: Kenneth Ballen</p>
     <p>Version 0.0.5</p>
 </footer> 
 </html>
