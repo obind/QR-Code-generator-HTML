@@ -1,6 +1,6 @@
 # 🌟 QR-Code Generator - Unser cooles Projekt 🌟
 
-Hi Leute! 😄 Wir möchten euch von unserem QR-Code Generator Projekt erzählen, das wir entwickelt haben. Es ist super easy und praktisch. Hier sind die Details und Code-Ausschnitte, falls ihr auch einen erstellen wollt! 👇
+Hi Leute! 😄 Ich möchte euch von meinem QR-Code Generator Projekt erzählen, das ich entwickelt habe. Es ist super easy und praktisch. Hier sind die Details und Code-Ausschnitte, falls ihr auch einen erstellen wollt! 👇
 
 ## Features und Funktionen 💡
 - Benutzerfreundliche Dropdown-Menüs zur Auswahl von Zuständen und Produkten 🎛️
