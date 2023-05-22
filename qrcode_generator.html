@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>QR-Code Generator</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <img id="hoermann_img" src="hoermann.png">
+    
+</head>
+
+<body>
+    <br>
+    <div class="grid-container">
+        <h1>QR-Code Generator</h1>
+        <br>
+        
+        <div class="left-item">
+            <h3>Zustände:</h3>
+            
+            <select size="1" name= "Bauart" id= "connecting">
+                <option value="bestCase">Best Case</option>
+                <option value="neverConnecting">Never Connecting </option>
+                <option value="rarelyConnecting">Rarely Connecting</option>
+                <option value="teachedBestCase">Teached BestCase</option>
+                <option value="failsLearningTrip">Fails Learning Trip</option>
+                <option value="disconnecting">Disconnecting</option>
+                <option value="teachedDisconnecting">Teached Disconnecting</option>
+                <option value="failsRetrievingErrorsOnce">Fails Retrieving Errors Once</option>
+                <option value="futureRelease">Future Release</option>
+            </select>
+
+            <h3>Produkte:</h3> 
+            <select name="Bauart" id="qr-data">
+                <option value="supramatic">SupraMatic</option>
+                <option value="supramatic4v2">SupraMatic4V2</option>
+                <option value="supramatic4Renesas">SupraMatic4-Renesas</option>
+                <option value="rollmatic2">Rollmatic2</option>
+                <option value="silentdrive2">SilentDrive2</option>
+                <option value="het">HETS24BLE</option>
+                <option value="wa500fu">WA500FU</option>
+            </select>          
+        </div>
+                     
+        <div id="favoriten">
+            <h3>Favoriten</h3> 
+            <table>
+                <tr><td><button class="button ripple" onclick="bestCaseSupramatic()">Best Case SupraMatic</button><br></td></tr>
+                <tr><td><button class="button ripple" onclick="bestCaseSupramatic4V2()">Best Case SupraMatic4V2</button><br></td></tr>
+                <tr><td><button class="button ripple" onclick="bestCaseSupramatic4Renesas()">Best Case SupraMatic4 Renesas</button><br></td></tr>
+                <tr><td><button class="button ripple" onclick="bestCaseSilentDrive2()">Best Case SilentDrive2</button><br></td></tr>
+                <tr><td><button class="button ripple" onclick="bestCaseRollmatic2()">Best Case Rollmatic 2</button><br></td></tr>
+                <tr><td><button class="button ripple" onclick="bestCaseHet()">HET</button><br></td></tr>
+            </table>
+            <div class="qrcode" style="position: relative; left:350px; bottom:320px;">
+                <div class="left-Item" id="mock-Show"><h3>QR-Code:</h3></div>
+            <div class="left-Item" id="test">
+                <div><p style="color: black; font-size: 20px;" id="qr-codeTxt"></p></div>
+                <div id="qr-code"></div>
+            </div>
+                <div class="wrapper" style="overflow: hidden; position: relative; top: 20px;">
+                    <div class="right-item" style="float:left;" ><button class="button ripple" id="print" onclick="printDiv('test')" disabled title="Bitte QR Code erstellen">Drucken</div>
+                    <div class="left-item"><button id="generator" style="background-color: #f39b07; margin-left: 10px;" class="button ripple" onclick="myFunction()">Generieren</button></div>
+
+                </div>
+            </div>       
+        </div>                
+    </div> 
+</body>
+<script src="javascript/qrcode.min.js"></script>
+<script src="javascript/javascript.js"></script>
+<br>
+<br>
+<br>
+<footer>
+    <p>Author: Hörmannn KG Antriebstechnik</p>
+    <p>Version 23.1.0</p>
+</footer> 
+</html>
+
+
+
